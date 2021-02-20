@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "bin": {
-    "sortjson": "./sortjson.js",
-    "missing-right": "./missing-right.js"
+    "sortjson": "./src/sortjson.js",
+    "missing-right": "./src/missing-right.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha './src/**/*.spec.js'"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,9 @@
   "homepage": "https://github.com/mweskott/sortjson#readme",
   "dependencies": {
     "commander": "^7.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "mocha": "^8.3.0"
   }
 }

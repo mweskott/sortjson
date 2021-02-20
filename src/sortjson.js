@@ -2,14 +2,15 @@
 
 const fs = require('fs');
 const program = require('commander');
+const { sortJson } = require('./jsonutils');
 
 program
     .arguments('<filename>')
-    .action(sortjson)
+    .action(sortJsonFile)
     .parse(process.argv);
 
-function sortjson(filename) {
+function sortJsonFile(filename) {
     const unsorted = JSON.parse(fs.readFileSync(filename, 'utf-8'));
-    const sorted = Object.keys(unsorted).sort().reduce((obj, key) => {obj[key] = unsorted[key]; return obj}, {});
+    const sorted = sortJson(unsorted);
     console.log(JSON.stringify(sorted, null, 2));
 }
