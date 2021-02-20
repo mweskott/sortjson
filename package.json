@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "bin": {
-    "sortjson": "./sortjson.js"
+    "sortjson": "./sortjson.js",
+    "missing-right": "./missing-right.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
