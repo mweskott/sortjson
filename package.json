@@ -1,0 +1,24 @@
+{
+  "name": "sortjson",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "sortjson": "./sortjson.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mweskott/sortjson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mweskott/sortjson/issues"
+  },
+  "homepage": "https://github.com/mweskott/sortjson#readme",
+  "dependencies": {
+    "commander": "^7.1.0"
+  }
+}
